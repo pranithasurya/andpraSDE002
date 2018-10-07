@@ -2,16 +2,20 @@ from bs4 import BeautifulSoup as soup
 from urllib.request import urlopen
 import json
 
+# goodreads url for web scraping
 my_url =  "https://www.goodreads.com/quotes/search?q=mark+twain&commit=Search";
 
+# open the url and get the HTML content
 client = urlopen(my_url)
 expedia_html = client.read()
 client.close()
 
+#parse the HTML content to get all the top Mark Twain quotes quotes
 quote_soup = soup(expedia_html,"html.parser")
 quote_container = quote_soup.find("div",{"class":"leftContainer"}).findAll("div",{"class","quoteDetails"})
 
 quoteList = []
+#counter to stop parsing when top 10 quotes are already found
 counter = 0
 
 for each in quote_container:
@@ -34,5 +38,6 @@ for each in quote_container:
 
 	quoteList.append(obj)
 
+#save contents to quotes.json file
 with open('quotes.json','w+') as f:
 	json.dump(quoteList, f, indent=4)
