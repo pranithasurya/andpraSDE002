@@ -5,8 +5,8 @@
 Authenticate user to http://www.goodreads.com website. Once the user is authenticated retrieve top 10 quotes of Mark Twain
 
 ## Prerequisites
--Use Python 3.5.0 version
--Make sure the following modules are available : bs4  , urllib.request, json. You can install these modules using pip(linux/windows) or easyinstall(windows) 
+- Use Python 3.5.0 version
+- ake sure the following modules are available : bs4  , urllib.request, json. You can install these modules using pip(linux/windows) or easyinstall(windows) 
 
 
 ## About contents in folder ./quotes:
