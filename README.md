@@ -31,6 +31,10 @@ Steps to run (to authenticate to goodreads):
 - go to "http://localhost:4400" . This redirects to http://goodreads.com native authentication
 - however, the website's redirect uri isn't working, the user will be authenticated but will not be redirected back to http://localhost:4400.
 
+## Test Driven Development concepts
+Once the flask python server is running, you can access the following end points to test the script:
+- Go to http://localhost:4400 to test the authentication to http://www.goodreads.com website (since it only supports native oauth in python)
+- Go to http://localhost:4400/quotes to test the retrieval and storing in a file the top 10 most popular quotes from Mark Twain
 
 ---------
 | NOTES |
