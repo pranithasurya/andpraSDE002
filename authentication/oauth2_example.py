@@ -6,11 +6,17 @@ import os
 app = Flask(__name__)
 
 
-# This information is obtained upon registration of a new GitHub
-# client_id = "NQAaGnYgozrajGSfmafg"
-# client_secret = "JyX0Tf6EC7FKOheV6N93RBfdLROBgrJLBpKoV5Fkl0Q"
-# authorization_base_url = 'https://www.goodreads.com/oauth/authorize'
-# token_url = 'https://www.goodreads.com/oauth/request_token'
+# goodreads api credentials
+client_id = "NQAaGnYgozrajGSfmafg"
+client_secret = "JyX0Tf6EC7FKOheV6N93RBfdLROBgrJLBpKoV5Fkl0Q"
+authorization_base_url = 'https://www.goodreads.com/oauth/authorize'
+token_url = 'https://www.goodreads.com/oauth/request_token'
+
+#google api credentials
+# client_id = "941396798328-1qmijp6srvaabj8s5lf5na84kkidlgb1.apps.googleusercontent.com"
+# client_secret = "zdmBGghj3CJ_h1In_vmpy5o5"
+# authorization_base_url = 'https://accounts.google.com/o/oauth2/auth'
+# token_url = 'https://accounts.google.com/o/oauth2/token'
 
 
 
