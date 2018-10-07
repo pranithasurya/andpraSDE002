@@ -60,6 +60,29 @@ def profile():
     # print(github.get('https://www.goodreads.com/api/auth_user').json())
     return "hello expedia!! Here is your access_token : " + session['oauth_token']['access_token']
 
+def getdata(cmd, filename):
+    os.system(cmd)
+    try:
+        fileloc = os.path.join(app.root_path,filename)
+        print(fileloc)
+        print(os.path.isfile(fileloc))
+        file = open(fileloc, "r")
+        if file:
+            print(file.read())
+        str = ""
+        with open(fileloc,"r") as f:
+            str+=f.read()
+
+        return str
+    except:
+        print("could not find file")
+        return []
+
+@app.route('/quotes',endpoint='quotes', methods=['GET','POST', 'OPTIONS'])
+def get():
+    return getdata('python ../quotes/marktwain_quote_parser.py', 'quotes.json')
+
+
 
 if __name__ == "__main__":
     # This allows us to use a plain HTTP callback
