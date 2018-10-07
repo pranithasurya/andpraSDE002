@@ -12,10 +12,6 @@ app = Flask(__name__)
 # authorization_base_url = 'https://www.goodreads.com/oauth/authorize'
 # token_url = 'https://www.goodreads.com/oauth/request_token'
 
-client_id = "180102219700-0gkb8thjgg5ihcdjom13tbsjss41q2hg.apps.googleusercontent.com"
-client_secret = "nl-r42C-MmTMCbYEoBJyC9nf"
-authorization_base_url = 'https://accounts.google.com/o/oauth2/auth'
-token_url = 'https://accounts.google.com/o/oauth2/token'
 
 
 @app.route("/")
