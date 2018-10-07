@@ -9,7 +9,7 @@ Authenticate user to http://www.goodreads.com website. Once the user is authenti
 -Make sure the following modules are available : bs4  , urllib.request, json. You can install these modules using pip(linux/windows) or easyinstall(windows) 
 
 
-## About contents in folder ./Quotes:
+## About contents in folder ./quotes:
 - This is to get top 10 Mark Twain quotes from http://www.goodreads.com website
 
 Steps to run:
