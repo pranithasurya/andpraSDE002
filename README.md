@@ -13,7 +13,7 @@ Authenticate user to http://www.goodreads.com website. Once the user is authenti
 - This is to get top 10 Mark Twain quotes from http://www.goodreads.com website
 
 Steps to run:
-- execute command "python marktwain_quote_parser"
+- execute command "python marktwain_quote_parser.py"
 - this creates a file quotes.json under the same directory
 
 
@@ -35,5 +35,5 @@ Steps to run (to authenticate to goodreads):
 ---------
 | NOTES |
 ---------
-To verify the website's redirection isn't working, comment goodreads oauth credentials and uncomment Google's in the file ./authentication/oauth2_example.py. Repeat the above steps to run to see the working example.
+To verify the goodreads website's redirection isn't working, comment goodreads oauth credentials and uncomment Google's in the file ./authentication/oauth2_example.py. Repeat the above steps to run to see the working example.
 
