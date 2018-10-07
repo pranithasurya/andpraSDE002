@@ -1,6 +1,6 @@
 # andpraSDE002
 
-##About
+## About
 
 Authenticate user to http://www.goodreads.com website. Once the user is authenticated retrieve top 10 quotes of Mark Twain
 
