@@ -6,7 +6,7 @@ Authenticate user to http://www.goodreads.com website. Once the user is authenti
 
 ## Prerequisites
 - Use Python 3.5.0 version
-- ake sure the following modules are available : bs4  , urllib.request, json, flask , requests_oauthlib, flask.json, os. You can install these modules using pip(linux/windows) or easyinstall(windows) 
+- Make sure the following modules are available : bs4  , urllib.request, json, flask , requests_oauthlib, flask.json, os. You can install these modules using pip(linux/windows) or easyinstall(windows) 
 
 
 ## About contents in folder ./quotes:
